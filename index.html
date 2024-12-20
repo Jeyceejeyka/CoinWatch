@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in the browser tab -->
     <title>CoinWatch</title>
+
+    <!-- External CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation bar with logo and search bar -->
     <nav class="nav">
+        <!-- Logo with a link to the home page -->
         <p class="logo"><a href="home">Coin <img src="images/phoenix-logo.png" alt="phoenix-logo" width="30px" height="auto"> Watch</a></p>
+        
+        <!-- Container for dynamic search input functionality -->
         <div class="searchInput">
             <!-- contains the search functionality dynamically -->
         </div>    
+        
+        <!-- Container for dynamic theme toggle button -->
         <div class="containModeButton">
             <!-- toggle btn is added here dynamically -->
         </div>
     </nav>
 
+    <!-- Heading for the home page with a brief description -->
     <p id="home">Cryptocurrency live CoinWatch<br />Top Coins are provided</p>
 
+    <!-- Rotating Phoenix logo animation -->
     <div class="rotate">
-        <img src="images/phoenix-logo.png" width="40px" height="auto" Rotating Phoenix Logo">
+        <img src="images/phoenix-logo.png" width="40px" height="auto" alt="Rotating Phoenix Logo">
     </div>
 
+    <!-- Titles for the cryptocurrency data columns -->
     <div id="HeadCoinTitles">
         <p class="itemTitle">Coin</p>
         <p class="itemTitle">Symbol</p>
@@ -34,38 +48,56 @@
         <p class="itemTitle">Change%24Hr</p>
         <p class="itemTitle">VWap24Hr</p>
     </div>
+
+    <!-- Container for displaying the list of coins dynamically -->
     <div class="container">
         <ul id="listContainer"></ul>
     </div>
 
-
-
-    <!-- explorer div -->
+    <!-- Section for exploring other cryptocurrencies -->
     <section id="explorer">
         <p class="explorerp">EXPLORE SOME OF THE COINS HERE</p>
+
+        <!-- Container for displaying coin explorers -->
         <div class="container3">
+            <!-- First item: Bitcoin explorer -->
             <div class="item3">
                 <img id="explorerImg1" src="images/bitcoin.png" alt="bitcoin">
-                <p class="explorerText"><a href="https://blockchain.info/">Bitcoin.info</a>Is a Bitcoin blockchain explorer that provides real-time data on transactions, blocks, and network stats. It includes tools to track Bitcoin prices, wallet activity, and more.</p>
+                <p class="explorerText"><a href="https://blockchain.info/">Bitcoin.info</a> is a Bitcoin blockchain explorer that provides real-time data on transactions, blocks, and network stats. It includes tools to track Bitcoin prices, wallet activity, and more.</p>
             </div>
+
+            <!-- Second item: Tether explorer -->
             <div class="item3">
                 <img id="explorerImg1" src="images/tether.png" alt="tether">
-                <p class="explorerText"><a href="https://blockchain.info/">Tether</a>is a block explorer for the Omni Layer, supporting tokens like Tether (USDT) and other Omni-based assets. It offers insights into transactions, token details, wallet addresses, and network activity. Visit the site for detailed information.</p>
+                <p class="explorerText"><a href="https://blockchain.info/">Tether</a> is a block explorer for the Omni Layer, supporting tokens like Tether (USDT) and other Omni-based assets. It offers insights into transactions, token details, wallet addresses, and network activity. Visit the site for detailed information.</p>
             </div>
-            </div>
-          </div>
+        </div>
     </section>
 
-
+    <!-- Footer with social media links -->
     <footer class="footer">
+        <!-- Facebook link -->
         <a href="https://www.facebook.com/jeycee.jeyka?mibextid=ZbWKwL"><img src="images/facebook-2429746_640.png" alt="facebook-2429746_640.png"></a>
+        
+        <!-- Instagram link -->
         <a href="https://www.instagram.com/jeyc_oder/profilecard/?igsh=MTd0a2dsM2o5bnh0aA=="><img src="images/instagram.png" alt="instagram.png"></a>
+        
+        <!-- Twitter link -->
         <a href="https://x.com/Jeyceejeyka?t=1kvSd-67SVRYM-RBRZWEyg&s=09"><img src="images/twitter.png" alt="twitter.png"></a>
+        
+        <!-- TikTok link -->
         <a href="https://www.tiktok.com/@imaaam__saadiq?_t=ZM-8sM7x75YRra&_r=1"><img src="images/tiktok.png" alt="tiktok.png"></a>
+        
+        <!-- Email link -->
         <a href="mailto:jeyceejeyka635@gmail.com"><img src="images/email.png" alt=".email.png"></a>
     </footer>
-    <div class="footerDiv"><p id="copyWrite">@CopyWrite<p id="year"></p></p></div>
 
+    <!-- Footer section with copyright information -->
+    <div class="footerDiv">
+        <p id="copyWrite">@CopyWrite<p id="year"></p></p>
+    </div>
+
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
