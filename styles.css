@@ -138,6 +138,7 @@ body {
 /* styling for welcome page */
 #home {
     text-align: center;
+    align-self: center;
     margin-top: 5em;
     margin-bottom: 1em;
     font-weight: bold;
